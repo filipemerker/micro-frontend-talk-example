@@ -16,7 +16,7 @@ module.exports = {
   },
 
   output: {
-    publicPath: "https://github.filipemerker.io/module-federation-shell",
+    publicPath: "https://filipemerker.github.io/module-federation-shell",
   },
 
   resolve: {
@@ -45,8 +45,8 @@ module.exports = {
       name: "shellApp",
       filename: "remoteEntry.js",
       remotes: {
-        "login": "login@https://github.filipemerker.io/module-federation-login/remoteEntry.js",
-        "user": "user@https://github.filipemerker.io/module-federation-user/remoteEntry.js",
+        "login": "login@https://filipemerker.github.io/module-federation-login/remoteEntry.js",
+        "user": "user@https://filipemerker.github.io/module-federation-user/remoteEntry.js",
       },
       shared: {
         ...deps,

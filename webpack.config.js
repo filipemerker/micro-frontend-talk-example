@@ -16,7 +16,7 @@ module.exports = {
   },
 
   output: {
-    publicPath: "http://localhost:3001/",
+    publicPath: "https://github.filipemerker.io/module-federation-shell",
   },
 
   resolve: {

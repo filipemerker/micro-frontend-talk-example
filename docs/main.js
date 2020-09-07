@@ -1,14 +1,14 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 24:
+/***/ 968:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 var error = new Error();
 module.exports = new Promise((resolve, reject) => {
 	if(typeof login !== "undefined") return resolve();
-	__webpack_require__.l("https://github.filipemerker.io/module-federation-login/remoteEntry.js", (event) => {
+	__webpack_require__.l("https://filipemerker.github.io/module-federation-login/remoteEntry.js", (event) => {
 		if(typeof login !== "undefined") return resolve();
 		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
 		var realSrc = event && event.target && event.target.src;
@@ -22,14 +22,14 @@ module.exports = new Promise((resolve, reject) => {
 
 /***/ }),
 
-/***/ 390:
+/***/ 849:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 var error = new Error();
 module.exports = new Promise((resolve, reject) => {
 	if(typeof user !== "undefined") return resolve();
-	__webpack_require__.l("https://github.filipemerker.io/module-federation-user/remoteEntry.js", (event) => {
+	__webpack_require__.l("https://filipemerker.github.io/module-federation-user/remoteEntry.js", (event) => {
 		if(typeof user !== "undefined") return resolve();
 		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
 		var realSrc = event && event.target && event.target.src;
@@ -194,7 +194,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "https://github.filipemerker.io/module-federation-shell";
+/******/ 		__webpack_require__.p = "https://filipemerker.github.io/module-federation-shell";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/remotes loading */
@@ -210,12 +210,12 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 			"235": [
 /******/ 				"default",
 /******/ 				"./loadApp",
-/******/ 				24
+/******/ 				968
 /******/ 			],
 /******/ 			"918": [
 /******/ 				"default",
 /******/ 				"./UserCard",
-/******/ 				390
+/******/ 				849
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.remotes = (chunkId, promises) => {
@@ -298,8 +298,8 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 					register("react-router-dom", "5.2.0", () => Promise.all([__webpack_require__.e(338), __webpack_require__.e(576)]).then(() => () => __webpack_require__(338)));
 /******/ 					register("react", "16.13.1", () => __webpack_require__.e(976).then(() => () => __webpack_require__(294)));
 /******/ 					register("styled-components", "5.1.1", () => Promise.all([__webpack_require__.e(163), __webpack_require__.e(965)]).then(() => () => __webpack_require__(163)));
-/******/ 					initExternal(24);
-/******/ 					initExternal(390);
+/******/ 					initExternal(968);
+/******/ 					initExternal(849);
 /******/ 				}
 /******/ 				break;
 /******/ 			}

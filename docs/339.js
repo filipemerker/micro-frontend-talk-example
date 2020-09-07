@@ -99,10 +99,6 @@ const SveltePage = () => {
 };
 
 /* harmony default export */ const svelte_page = (SveltePage);
-// EXTERNAL MODULE: consume shared module (default) styled-components@^5.1.1 (strict) (fallback: ./node_modules/styled-components/dist/styled-components.browser.esm.js)
-var styled_components_browser_esm_js_ = __webpack_require__(314);
-var styled_components_browser_esm_js_default = /*#__PURE__*/__webpack_require__.n(styled_components_browser_esm_js_);
-
 // EXTERNAL MODULE: remote user/UserCard
 var UserCard = __webpack_require__(918);
 var UserCard_default = /*#__PURE__*/__webpack_require__.n(UserCard);
@@ -113,12 +109,13 @@ var UserCard_default = /*#__PURE__*/__webpack_require__.n(UserCard);
 
 
 
-
 const User = () => {
   const [user] = (0,react_index_js_.useContext)(UserContext);
   return /*#__PURE__*/react_index_js_default().createElement(src_Page, {
     title: `Welcome, ${user.name}!`
-  }, /*#__PURE__*/react_index_js_default().createElement(Wrapper, null, /*#__PURE__*/react_index_js_default().createElement((UserCard_default()), {
+  }, /*#__PURE__*/react_index_js_default().createElement("section", {
+    className: "wrapper"
+  }, /*#__PURE__*/react_index_js_default().createElement((UserCard_default()), {
     name: user.name,
     picture: user.picture,
     address: user.address,
@@ -126,17 +123,6 @@ const User = () => {
   })));
 };
 
-const Wrapper = (styled_components_browser_esm_js_default()).section`
-  background: linear-gradient(to bottom right, #f26b26 0%, #8f2784 100%);
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 /* harmony default export */ const user = (User);
 // CONCATENATED MODULE: ./src/Routes.jsx
 

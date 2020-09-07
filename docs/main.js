@@ -297,7 +297,6 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 					register("react-dom", "16.13.1", () => Promise.all([__webpack_require__.e(935), __webpack_require__.e(150)]).then(() => () => __webpack_require__(935)));
 /******/ 					register("react-router-dom", "5.2.0", () => Promise.all([__webpack_require__.e(338), __webpack_require__.e(576)]).then(() => () => __webpack_require__(338)));
 /******/ 					register("react", "16.13.1", () => __webpack_require__.e(976).then(() => () => __webpack_require__(294)));
-/******/ 					register("styled-components", "5.2.0", () => Promise.all([__webpack_require__.e(163), __webpack_require__.e(965)]).then(() => () => __webpack_require__(163)));
 /******/ 					initExternal(968);
 /******/ 					initExternal(849);
 /******/ 				}
@@ -431,7 +430,6 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 		var installedModules = {};
 /******/ 		var moduleToHandlerMapping = {
 /******/ 			169: () => loadSingletonVersionCheckFallback("default", "react-dom", [1,16,13,0], () => Promise.all([__webpack_require__.e(935), __webpack_require__.e(150)]).then(() => () => __webpack_require__(935))),
-/******/ 			314: () => loadStrictVersionCheckFallback("default", "styled-components", [1,5,1,1], () => Promise.all([__webpack_require__.e(163), __webpack_require__.e(965)]).then(() => () => __webpack_require__(163))),
 /******/ 			399: () => loadSingletonVersionCheckFallback("default", "@material-ui/core", [1,4,9,4], () => Promise.all([__webpack_require__.e(98), __webpack_require__.e(138)]).then(() => () => __webpack_require__(98))),
 /******/ 			558: () => loadSingletonVersionCheckFallback("default", "react", [1,16,13,0], () => __webpack_require__.e(976).then(() => () => __webpack_require__(294))),
 /******/ 			819: () => loadSingletonVersionCheckFallback("default", "react-router-dom", [1,5,1,2], () => Promise.all([__webpack_require__.e(338), __webpack_require__.e(576)]).then(() => () => __webpack_require__(338))),
@@ -441,8 +439,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 			982: () => loadSingletonVersionCheckFallback("default", "react-dom", [0,16,6,0], () => Promise.all([__webpack_require__.e(935), __webpack_require__.e(150)]).then(() => () => __webpack_require__(935))),
 /******/ 			150: () => loadSingletonVersionCheckFallback("default", "react", [1,16,13,1], () => __webpack_require__.e(294).then(() => () => __webpack_require__(294))),
 /******/ 			410: () => loadSingletonVersionCheckFallback("default", "react", [0,15], () => __webpack_require__.e(976).then(() => () => __webpack_require__(294))),
-/******/ 			635: () => loadSingletonVersionCheckFallback("default", "react", [,[1,16,0,0],[1,15,0,0],[2,0,14,0],1,1], () => __webpack_require__.e(976).then(() => () => __webpack_require__(294))),
-/******/ 			965: () => loadSingletonVersionCheckFallback("default", "react", [,[4,16,8,0],[0],2], () => __webpack_require__.e(976).then(() => () => __webpack_require__(294)))
+/******/ 			635: () => loadSingletonVersionCheckFallback("default", "react", [,[1,16,0,0],[1,15,0,0],[2,0,14,0],1,1], () => __webpack_require__.e(976).then(() => () => __webpack_require__(294)))
 /******/ 		};
 /******/ 		// no consumes in initial chunks
 /******/ 		var chunkMapping = {
@@ -457,7 +454,6 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 			],
 /******/ 			"339": [
 /******/ 				169,
-/******/ 				314,
 /******/ 				399,
 /******/ 				558,
 /******/ 				819
@@ -465,9 +461,6 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 			"576": [
 /******/ 				410,
 /******/ 				635
-/******/ 			],
-/******/ 			"965": [
-/******/ 				965
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.consumes = (chunkId, promises) => {
@@ -518,7 +511,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if(!/^(138|150|576|965)$/.test(chunkId)) {
+/******/ 						if(!/^(138|150|576)$/.test(chunkId)) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => {
 /******/ 								installedChunkData = installedChunks[chunkId] = [resolve, reject];

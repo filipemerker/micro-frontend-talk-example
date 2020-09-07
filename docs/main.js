@@ -194,7 +194,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "https://filipemerker.github.io/module-federation-shell";
+/******/ 		__webpack_require__.p = "https://filipemerker.github.io/module-federation-shell/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/remotes loading */
@@ -297,7 +297,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 					register("react-dom", "16.13.1", () => Promise.all([__webpack_require__.e(935), __webpack_require__.e(150)]).then(() => () => __webpack_require__(935)));
 /******/ 					register("react-router-dom", "5.2.0", () => Promise.all([__webpack_require__.e(338), __webpack_require__.e(576)]).then(() => () => __webpack_require__(338)));
 /******/ 					register("react", "16.13.1", () => __webpack_require__.e(976).then(() => () => __webpack_require__(294)));
-/******/ 					register("styled-components", "5.1.1", () => Promise.all([__webpack_require__.e(163), __webpack_require__.e(965)]).then(() => () => __webpack_require__(163)));
+/******/ 					register("styled-components", "5.2.0", () => Promise.all([__webpack_require__.e(163), __webpack_require__.e(965)]).then(() => () => __webpack_require__(163)));
 /******/ 					initExternal(968);
 /******/ 					initExternal(849);
 /******/ 				}

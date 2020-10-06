@@ -13,4 +13,4 @@ They are integrated toguether by [Webpack's Module Federation Plugin](https://we
 ## Live example
 The user is **pam** and the password is **123**
 
-[https://filipemerker.github.io/module-federation-shell/](https://filipemerker.github.io/module-federation-shell/)
+[https://filipemerker.github.io/micro-frontend-talk-example/](https://filipemerker.github.io/micro-frontend-talk-example/)

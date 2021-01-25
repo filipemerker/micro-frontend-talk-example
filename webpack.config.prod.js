@@ -16,7 +16,7 @@ module.exports = {
   },
 
   output: {
-    publicPath: "https://filipemerker.github.io/module-federation-shell/",
+    publicPath: "https://filipemerker.github.io/micro-frontend-talk-example/",
   },
 
   resolve: {

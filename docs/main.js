@@ -194,7 +194,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "https://filipemerker.github.io/module-federation-shell/";
+/******/ 		__webpack_require__.p = "https://filipemerker.github.io/micro-frontend-talk-example/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/remotes loading */
@@ -293,10 +293,10 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 			var promises = [];
 /******/ 			switch(name) {
 /******/ 				case "default": {
-/******/ 					register("@material-ui/core", "4.11.0", () => Promise.all([__webpack_require__.e(98), __webpack_require__.e(138)]).then(() => () => __webpack_require__(98)));
-/******/ 					register("react-dom", "16.13.1", () => Promise.all([__webpack_require__.e(935), __webpack_require__.e(150)]).then(() => () => __webpack_require__(935)));
-/******/ 					register("react-router-dom", "5.2.0", () => Promise.all([__webpack_require__.e(338), __webpack_require__.e(576)]).then(() => () => __webpack_require__(338)));
-/******/ 					register("react", "16.13.1", () => __webpack_require__.e(976).then(() => () => __webpack_require__(294)));
+/******/ 					register("@material-ui/core", "4.11.3", () => Promise.all([__webpack_require__.e(98), __webpack_require__.e(767)]).then(() => () => __webpack_require__(98)));
+/******/ 					register("react-dom", "16.14.0", () => Promise.all([__webpack_require__.e(935), __webpack_require__.e(624)]).then(() => () => __webpack_require__(935)));
+/******/ 					register("react-router-dom", "5.2.0", () => Promise.all([__webpack_require__.e(338), __webpack_require__.e(500)]).then(() => () => __webpack_require__(338)));
+/******/ 					register("react", "16.14.0", () => __webpack_require__.e(976).then(() => () => __webpack_require__(294)));
 /******/ 					initExternal(968);
 /******/ 					initExternal(849);
 /******/ 				}
@@ -429,38 +429,38 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 		});
 /******/ 		var installedModules = {};
 /******/ 		var moduleToHandlerMapping = {
-/******/ 			169: () => loadSingletonVersionCheckFallback("default", "react-dom", [1,16,13,0], () => Promise.all([__webpack_require__.e(935), __webpack_require__.e(150)]).then(() => () => __webpack_require__(935))),
-/******/ 			399: () => loadSingletonVersionCheckFallback("default", "@material-ui/core", [1,4,9,4], () => Promise.all([__webpack_require__.e(98), __webpack_require__.e(138)]).then(() => () => __webpack_require__(98))),
+/******/ 			169: () => loadSingletonVersionCheckFallback("default", "react-dom", [1,16,13,0], () => Promise.all([__webpack_require__.e(935), __webpack_require__.e(624)]).then(() => () => __webpack_require__(935))),
+/******/ 			399: () => loadSingletonVersionCheckFallback("default", "@material-ui/core", [1,4,9,4], () => Promise.all([__webpack_require__.e(98), __webpack_require__.e(767)]).then(() => () => __webpack_require__(98))),
 /******/ 			558: () => loadSingletonVersionCheckFallback("default", "react", [1,16,13,0], () => __webpack_require__.e(976).then(() => () => __webpack_require__(294))),
-/******/ 			819: () => loadSingletonVersionCheckFallback("default", "react-router-dom", [1,5,1,2], () => Promise.all([__webpack_require__.e(338), __webpack_require__.e(576)]).then(() => () => __webpack_require__(338))),
+/******/ 			819: () => loadSingletonVersionCheckFallback("default", "react-router-dom", [1,5,1,2], () => Promise.all([__webpack_require__.e(338), __webpack_require__.e(500)]).then(() => () => __webpack_require__(338))),
 /******/ 			181: () => loadSingletonVersionCheckFallback("default", "react", [0,16,6,0], () => __webpack_require__.e(976).then(() => () => __webpack_require__(294))),
-/******/ 			259: () => loadSingletonVersionCheckFallback("default", "react", [1,16,8,0], () => __webpack_require__.e(976).then(() => () => __webpack_require__(294))),
-/******/ 			318: () => loadSingletonVersionCheckFallback("default", "react-dom", [1,16,8,0], () => Promise.all([__webpack_require__.e(935), __webpack_require__.e(150)]).then(() => () => __webpack_require__(935))),
-/******/ 			982: () => loadSingletonVersionCheckFallback("default", "react-dom", [0,16,6,0], () => Promise.all([__webpack_require__.e(935), __webpack_require__.e(150)]).then(() => () => __webpack_require__(935))),
-/******/ 			150: () => loadSingletonVersionCheckFallback("default", "react", [1,16,13,1], () => __webpack_require__.e(294).then(() => () => __webpack_require__(294))),
+/******/ 			734: () => loadSingletonVersionCheckFallback("default", "react-dom", [,[1,17,0,0],[1,16,8,0],1], () => Promise.all([__webpack_require__.e(935), __webpack_require__.e(624)]).then(() => () => __webpack_require__(935))),
+/******/ 			982: () => loadSingletonVersionCheckFallback("default", "react-dom", [0,16,6,0], () => Promise.all([__webpack_require__.e(935), __webpack_require__.e(624)]).then(() => () => __webpack_require__(935))),
+/******/ 			988: () => loadSingletonVersionCheckFallback("default", "react", [,[1,17,0,0],[1,16,8,0],1], () => __webpack_require__.e(976).then(() => () => __webpack_require__(294))),
+/******/ 			624: () => loadSingletonVersionCheckFallback("default", "react", [1,16,14,0], () => __webpack_require__.e(294).then(() => () => __webpack_require__(294))),
 /******/ 			410: () => loadSingletonVersionCheckFallback("default", "react", [0,15], () => __webpack_require__.e(976).then(() => () => __webpack_require__(294))),
-/******/ 			635: () => loadSingletonVersionCheckFallback("default", "react", [,[1,16,0,0],[1,15,0,0],[2,0,14,0],1,1], () => __webpack_require__.e(976).then(() => () => __webpack_require__(294)))
+/******/ 			878: () => loadSingletonVersionCheckFallback("default", "react", [,[1,17,0,0],[1,16,0,0],[1,15,0,0],[2,0,14,0],1,1,1], () => __webpack_require__.e(976).then(() => () => __webpack_require__(294)))
 /******/ 		};
 /******/ 		// no consumes in initial chunks
 /******/ 		var chunkMapping = {
-/******/ 			"138": [
-/******/ 				181,
-/******/ 				259,
-/******/ 				318,
-/******/ 				982
-/******/ 			],
-/******/ 			"150": [
-/******/ 				150
-/******/ 			],
 /******/ 			"339": [
 /******/ 				169,
 /******/ 				399,
 /******/ 				558,
 /******/ 				819
 /******/ 			],
-/******/ 			"576": [
+/******/ 			"500": [
 /******/ 				410,
-/******/ 				635
+/******/ 				878
+/******/ 			],
+/******/ 			"624": [
+/******/ 				624
+/******/ 			],
+/******/ 			"767": [
+/******/ 				181,
+/******/ 				734,
+/******/ 				982,
+/******/ 				988
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.consumes = (chunkId, promises) => {
@@ -511,7 +511,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if(!/^(138|150|576)$/.test(chunkId)) {
+/******/ 						if(!/^(500|624|767)$/.test(chunkId)) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => {
 /******/ 								installedChunkData = installedChunks[chunkId] = [resolve, reject];

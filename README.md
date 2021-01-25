@@ -1,5 +1,7 @@
 # 📦 Micro-frontends Talk Example
 
+<h1 align="center"><img src="/public/screenshot.png" width="500px" alt="Apps screenshot" /></h1>
+
 > This is an example used in my [talk about micro-frontends with Module Federation](https://youtu.be/ojplNjHY13E?t=2565)
 
 It basically consists of three repos:
